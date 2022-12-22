@@ -1,7 +1,12 @@
-import * as React from "react";
+import * as React from 'react'
 
 function App() {
-  return <div>App</div>;
+  const u = ''
+  return (
+    <div>
+      <div>LYOUT</div>
+    </div>
+  )
 }
 
-export default App;
+export default App
