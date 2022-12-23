@@ -1,8 +1,9 @@
 import React, { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
+import { BrowserRouter } from 'react-router-dom'
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>
+  return <BrowserRouter>{children}</BrowserRouter>
 }
 
 const customRender = (
