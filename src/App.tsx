@@ -1,6 +1,6 @@
 import { AppLayout } from '@features/layouts'
 import { Route, Routes } from 'react-router-dom'
-import { Ideas, Profile, Projects, TrendingTech } from '@views/index'
+import { Ideas, NotFound, Profile, Projects, TrendingTech } from '@views/index'
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
         <Route path='profile' element={<Profile />} />
         <Route path='ideas' element={<Ideas />} />
         <Route path='trending-tech' element={<TrendingTech />} />
+
+        <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>
   )
